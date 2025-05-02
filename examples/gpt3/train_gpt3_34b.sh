@@ -12,8 +12,8 @@ NUM_NODES=1
 NODE_RANK=0
 WORLD_SIZE=$(($GPUS_PER_NODE*$NUM_NODES))
 
-CHECKPOINT_PATH=./output/checkpoints
-TENSORBOARD_LOGS_PATH=./output/tensorboard_logs
+CHECKPOINT_PATH=./output/checkpoints/
+TENSORBOARD_LOGS_PATH=./output/tensorboard/
 VOCAB_FILE=./vocab/gpt2-vocab.json
 MERGE_FILE=./vocab/gpt2-merges.txt
 DATA_PATH=./dataset/enwiki-100m_text_document
